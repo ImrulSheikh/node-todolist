@@ -1,6 +1,6 @@
 
-var express = require('express')
-// import express from 'express';
+// var express = require('express')
+import express from 'express';
 const app = express()
 
 app.get('/', function (req, res) {
