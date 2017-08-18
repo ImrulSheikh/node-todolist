@@ -7,12 +7,10 @@
   "author": "skimrul <sheikh.imrul@gmail.com>",
   "license": "MIT",
   "scripts": {
-  
+    "start": "node server/index.js"
   },
   "dependencies": {
-  
+    "express": "^4.15.4"
   },
-  "devDependencies": {
-    
-  }
+  "devDependencies": {}
 }
