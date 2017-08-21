@@ -1,0 +1,23 @@
+{
+    "parser": "babel-eslint",
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "prettier",
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "plugins": [
+        "react",
+        "prettier"
+    ],
+    "rules": {
+        "prettier/prettier": "error",
+        "comma-dangle": ["error", "never"],
+        "allow": ["warn", "error"],
+        "semi": ["error", "always"],
+        "no-extra-semi": "error"
+    }
+}
