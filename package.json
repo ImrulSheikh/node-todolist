@@ -7,8 +7,10 @@
   "author": "skimrul <sheikh.imrul@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "babel-node server/index.js",
-    "build": "babel server"
+    "prestart": "npm-run-all --parallel security-check",
+    "start": "npm-run-all --parallel babel-node server/index.js",
+    "build": "babel server",
+    "security-check": "nsp check"
   },
   "dependencies": {
     "express": "^4.15.4"
@@ -16,6 +18,8 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.0",
+    "npm-run-all": "^4.0.2",
+    "nsp": "^2.7.0",
     "open": "^0.0.5"
   }
 }
