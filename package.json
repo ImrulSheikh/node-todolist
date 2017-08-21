@@ -8,8 +8,8 @@
   "license": "MIT",
   "scripts": {
     "prestart": "npm-run-all --parallel security-check",
-    "start": "npm-run-all --parallel babel-node server/index.js",
-    "build": "babel server",
+    "start": "npm-run-all --parallel server:run",
+    "server:run": "babel-node server/index.js",
     "security-check": "nsp check"
   },
   "dependencies": {
@@ -18,8 +18,11 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.0",
+    "html-webpack-plugin": "^2.30.1",
     "npm-run-all": "^4.0.2",
     "nsp": "^2.7.0",
-    "open": "^0.0.5"
+    "open": "^0.0.5",
+    "webpack": "^3.5.5",
+    "webpack-dev-middleware": "^1.12.0"
   }
 }
