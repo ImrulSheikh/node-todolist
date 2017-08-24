@@ -9,9 +9,10 @@ export default {
     filename: "index.bundle.js"
   },
   module: {
-    //   rules: [
-    //     { test: /\.txt$/, use: 'raw-loader' }
-    //   ]
+    loaders: [
+      { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
+      { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ }
+    ]
   },
   plugins: [
     // Create HTML file that includes reference to bundled JS.

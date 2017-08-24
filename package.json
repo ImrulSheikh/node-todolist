@@ -13,12 +13,16 @@
     "security-check": "nsp check"
   },
   "dependencies": {
-    "express": "^4.15.4"
+    "express": "^4.15.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
     "eslint": "^4.5.0",
     "eslint-plugin-prettier": "^2.2.0",
     "eslint-plugin-react": "^7.2.1",
